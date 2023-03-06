@@ -1,0 +1,31 @@
+ /* The animation code */
+@keyframes Image {
+  0% {transform: rotate(270deg);}
+  20% {transform: translateX(300px);}
+  40% {transform: translateY(300px);}
+  60% {transform: rotate(90deg);
+      transform: translateY(-150px);}
+  80%{transform: translateX(150px);}
+ 100%{transform: rotate(-180deg);}
+      
+}
+
+/* The element to apply the animation to */
+.image {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  animation-name: Image;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate ; 
+  transition: linear;  
+  translate: 20px;
+} 
+.image img{
+  width: 100%;
+  length: 100%;
+}
+.image :hover{
+  transform: rotate(360deg);
+}
